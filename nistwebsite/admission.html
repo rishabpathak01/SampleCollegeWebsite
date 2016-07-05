@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Welcome to NIST</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+	</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="images/nistlogo.jpg"/>
+		</div>
+		<div class="title">
+		National Institute of Science and Technology</br>
+		<div class="address">Palur Hills, Berhampur, Odisha-761008</div> 	
+		</div>
+	</div>
+	<!--end of header -->
+	<div id="left_sidebar">
+		<div id="menu_header">
+				<h1><a href="#"></a></h1>
+		</div>
+		<div id="menu_body">
+                <ul class="navigation">
+                	<li><a href="index.html" class="selected">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="syllabus.html">Syllabus</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+					<li><a href="clubs.html">Clubs</a></li>
+                    <li><a href="contact.html" class="last">Contact</a></li>	
+                </ul>	
+        </div>
+	</div>
+	<!--end of left -sidebar -->
+	<div id="right_sidebar">
+		<div id="menu_header">
+				<h1><a href="#"></a></h1>
+		</div>
+		<div id="menu_body">
+                <ul class="navigation">
+                	<li><a href="login.html">Log In</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="#admission_form">Admission</a></li>
+                    <li><a href="job_application.html">Job Application</a></li>
+					<li><a href="placement.html">Placements</a></li>
+                    <li><a href="about.html" class="last">About NIST</a></li>	
+                </ul>	
+        </div>
+	</div>
+	<!--end of right sidebar-->
+<div id="admission_form">
+		<form name="admission" method="GET" action="admission_php.php">
+					<li>
+						<input type="text" class="text" name="fname" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" >
+					</li>
+					<li>
+						<input type="text" class="text" value="Last Name" name="lname" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}" >
+					</li>
+					
+						<label>Gender</label>
+					<li>
+						<input type="radio" id="gender" name="gender" value="Male"><label>Male</label>
+						<input type="radio" id="gender" name="gender" value="Female"><label>Female</label>
+					</li>
+					<li>
+						<input type="email" value="Enter email address" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter email address';}">
+					</li>
+					<li>
+						<input type="text" value="Enter Mobile Number" name="mobile" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Mobile Number';}">
+					</li>
+					<li>
+						<select id="education" name="education">
+							<option >Qualification</option>
+							<option value="Matriculation">Matriculation</option>
+							<option value="Intermediate">Intermediate</option>
+							<option value="Diploma">Diploma</option>
+							<option value="B.Tech/B.E.">B.Tech/B.E.</option>
+						</select>
+					</li>
+					<div class="signup_end">
+								
+								<input type="submit" value="Submit"/>&nbsp;&nbsp;
+								<a href="index.html"><input type="button"value="Cancel"></a>
+							<div class="clear"> </div>
+					</div>
+				</form>		
+	</div>
+</div>
+	<!--end of body content page div-->
+</body>
+</html>

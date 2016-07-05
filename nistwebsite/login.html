@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Welcome to NIST</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+	</head>
+<body>
+	<script src="validate.js"></script>
+	<div class="header">
+		<div class="logo">
+			<img src="images/nistlogo.jpg"/>
+		</div>
+		<div class="title">
+		National Institute of Science and Technology</br>
+		<div class="address">Palur Hills, Berhampur, Odisha-761008</div> 	
+		</div>
+	</div>
+	<!--end of header -->
+	<div class="login_form">
+		<form name="login-form" method="GET" action="login_validate.php"/ >
+			<li>
+						<input type="text" class="text" value="USERNAME" name="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'USERNAME';}" >
+					</li>
+					<li>
+						<input type="password" value="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+					</li>
+					<div class="login_end">
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Remember Me</label>
+								<br>
+								<input type="submit" value="SIGN IN">
+								<a href="index.html"><input type="button"value="Cancel"></a>
+							<div class="clear"> </div>
+					</div>
+				</form>
+	</div>
+	
+</body>
+</html>

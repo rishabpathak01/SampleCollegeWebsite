@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Welcome to NIST</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+	</head>
+<body>
+	<script src="validate.js"></script>
+	<div class="header">
+		<div class="logo">
+			<img src="images/nistlogo.jpg"/>
+		</div>
+		<div class="title">
+		National Institute of Science and Technology</br>
+		<div class="address">Palur Hills, Berhampur, Odisha-761008</div> 	
+		</div>
+	</div>
+	<!--end of header -->
+	<div class="signup_form">
+		<form method="GET" action="signup_php.php">
+					<li>
+						<input type="text" class="text" name="fname" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					</li>
+					<li>
+						<input type="text" class="text" name="roll" value="Roll" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Roll';}">
+					</li>
+					<li>
+						<input type="text" value="Reg.No." name="regno" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Reg No.';}">
+					</li>
+					<li>
+						<input type="text" value="College Name" name="college" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'College Name';}">
+					</li>
+					<li>
+						<input type="text" value="University" name="university" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'University';}">
+					</li>
+					<li>
+						<input type="password" value="Password" placeholder="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+					</li>
+					<div class="signup_end">
+								<input type="submit" value="Sign Up" onclick="window.location.href='login.html';"/>&nbsp;&nbsp;
+								<a href="index.html"><input type="button"value="Cancel"></a>
+							<div class="clear"> </div>
+					</div>
+				</form>		
+	</div>
+	
+</body>
+</html>
